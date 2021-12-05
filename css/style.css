@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+  }
+  
+.container {
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    visibility: hidden;
+    width: 100vw;
+  }
+.title {
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin: 50vmin auto;
+    left: 0;
+    right: 0;
+   
+}
