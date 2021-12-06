@@ -1,20 +1,20 @@
 // Run when the webpage is loaded
 window.addEventListener('load', () => {
     Swal.fire({
-      title: 'Are you sure to play music in background?',
+      title: 'Mau dengerin musik nggak?',
       // text: "You won't be able to revert this!",
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes',
-      cancelButtonText: 'No',
+      confirmButtonText: 'Mau',
+      cancelButtonText: 'Nggak dulu',
     }).then((result) => {
       if (result.isConfirmed) {
         document.querySelector('.song').play();
-        resolveFetch().then(animationTimeline());
+        animationTimeline();
       } else {
-        resolveFetch().then(animationTimeline());
+        animationTimeline();
       }
     })
   })
@@ -113,20 +113,20 @@ window.addEventListener('load', () => {
         },
         "+=0.7"
       )
-      .from(".idea-1", 0.7, ideaTextTrans)
-      .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-2", 0.7, ideaTextTrans)
-      .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-3", 0.7, ideaTextTrans)
+      .from(".idea-1", 1, ideaTextTrans)
+      .to(".idea-1", 1, ideaTextTransLeave, "+=1.5")
+      .from(".idea-2", 1, ideaTextTrans)
+      .to(".idea-2", 1, ideaTextTransLeave, "+=1.5")
+      .from(".idea-3", 1, ideaTextTrans)
       .to(".idea-3 strong", 0.5, {
         scale: 1.2,
         x: 10,
         backgroundColor: "rgb(21, 161, 237)",
         color: "#fff",
       })
-      .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-4", 0.7, ideaTextTrans)
-      .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
+      .to(".idea-3", 1, ideaTextTransLeave, "+=1.5")
+      .from(".idea-4", 1, ideaTextTrans)
+      .to(".idea-4", 1, ideaTextTransLeave, "+=1.5")
       .from(
         ".idea-5",
         0.7, {
@@ -246,7 +246,7 @@ window.addEventListener('load', () => {
           opacity: 0,
           scale: 80,
           repeat: 1,
-          repeatDelay: 1.4,
+          repeatDelay: 0.5,
         },
         0.3
       )
@@ -255,15 +255,15 @@ window.addEventListener('load', () => {
         y: 30,
         zIndex: "-1",
       })
-      .staggerFrom(".penutup1", 1, {opacity: 0, y: -20, duration: 1, rotationX: 5, skewX: "15deg"}, 1.2)
-      .staggerTo(".penutup1", 0.7, {opacity: 0, y: 20, rotationY: 5, skewX: "-15deg"}, 1.5, "+=1.5")
-      .staggerFrom(".penutup2", 1, {opacity: 0, y: -20, duration: 1, rotationX: 5, skewX: "15deg"}, 1.2)
-      .staggerTo(".penutup2", 0.7, {opacity: 0, y: 20, rotationY: 5, skewX: "-15deg"}, 1.5, "+=1.5")
-      .staggerFrom(".penutup3", 1, {opacity: 0, y: -20, duration: 1, rotationX: 5, skewX: "15deg"}, 1.2)
-      .staggerTo(".penutup3", 0.7, {opacity: 0, y: -20, rotationY: 5, skewX: "-15deg"}, 1.5, "+=1.5")
+      .staggerFrom(".penutup1", 1, {opacity: 0, y: -20, duration: 1, rotationX: 5, skewX: "15deg"}, 0)
+      .staggerTo(".penutup1", 0.7, {opacity: 0, y: 20, rotationY: 5, skewX: "-15deg"}, 1.5, "+=0.7")
+      .staggerFrom(".penutup2", 1, {opacity: 0, y: -20, duration: 1, rotationX: 5, skewX: "15deg"}, 0)
+      .staggerTo(".penutup2", 0.7, {opacity: 0, y: 20, rotationY: 5, skewX: "-15deg"}, 1.5, "+=0.7")
+      .staggerFrom(".penutup3", 1, {opacity: 0, y: -20, duration: 1, rotationX: 5, skewX: "15deg"}, 0)
+      .staggerTo(".penutup3", 0.7, {opacity: 0, y: -20, rotationY: 5, skewX: "-15deg"}, 1.5, "+=0.7")
       .fromTo(".penutup4", 1, {opacity: 0, y: -20, rotationX: 5, skewX: "15deg"}, {opacity:0.9, y: 40}, "+=1.2")
       .fromTo(".last-smile", 1, {opacity:0} , {opacity:1, rotation: 90}, "+=1" )
-      .fromTo(".tombol", 1, {opacity: 0, y: 20, rotationX: 5, skewX: "15deg"}, {y:-30, opacity:1, skewX:"0deg"}, "+=2.5")
+      .fromTo(".tombol", 1, {opacity: 0, y: 20, rotationX: 5, skewX: "15deg"}, {y:-30, opacity:1, skewX:"0deg"}, "+=1.5")
     ;
      //tl.seek("party");
      //tl.timeScale(2);
