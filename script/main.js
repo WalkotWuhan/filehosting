@@ -29,9 +29,9 @@ const TimelineKalimat = () => {
   tl.to(".container", { duration: 1, visibility: "visible" });
   tl.from(".kalimat1", { duration: 2, opacity: 0, y: 100, ease: "back" });
   tl.to(".kalimat1", { duration: 2, opacity: 0, y: 0 }, "+=1.5");
-  tl.from(".kalimat2", { duration: 2, opacity: 0, y: 100, ease: "back"});
-  tl.to(".kalimat2", {duration: 2, opacity: 0, y:-20, onComplete: KonfirmasiMusik}, "+=1");
-  };
+  tl.from(".kalimat2", { duration: 2, opacity: 0, y: 100, ease: "back" });
+  tl.to(".kalimat2", { duration: 2, opacity: 0, y: -20, onComplete: KonfirmasiMusik }, "+=1");
+};
 
 const KonfirmasiMusik = () => {
   Swal.fire({
@@ -45,10 +45,18 @@ const KonfirmasiMusik = () => {
     cancelButtonText: 'Tidak'
   }).then((result) => {
     if (result.isConfirmed) {
-      Swal.fire('hbd.mp3','Sedang dimainkan :)','success');
+      Swal.fire('hbd.mp3', 'Sedang dimainkan :)', 'success');
       document.querySelector('.song').play();
+      WebpageProject();
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      WebpageProject();
     }
   })
+};
+
+const WebpageProject = () => {
+  const tl = gsap.timeline({});
+  tl.to(".myProject", { duration: 2, visibility: "visible", opacity: 1, y: 10, ease: "back" });
 };
 
 //var objs = document.getElementsByClassName("container");
