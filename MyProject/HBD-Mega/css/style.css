@@ -1,0 +1,279 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+.song {
+  visibility: hidden;
+}
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 30vh;
+}
+.one {
+    font-size: 7.5vmin;
+}
+.one > img {
+  height: auto;
+  margin-bottom: 10px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.two {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.two_1 {
+  font-size: 2.5rem;
+  font-weight: bold;  
+}
+
+.three {
+  font-size: 2.5vmin;
+}
+
+.four .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 90vw;
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  background-color: rgb(21, 161, 237);
+  border-radius: 4px;
+  bottom: 5px;
+  color: #fff;
+  padding: 5px 8px;
+  position: absolute;
+  right: 5px;
+}
+.five {
+  margin: auto 10vw;
+}
+.five p {
+  font-size: 6.5vmin;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.idea-3 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+}
+
+.five .idea-5 {
+  font-size: 4rem;
+}
+
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
+  display: inline-block;
+}
+.idea-6 span {
+  font-size: 15rem;
+}
+
+.container div.six {
+  top: 10vh;
+  z-index: 1;
+}
+
+.container div.seven,
+.container div.eight {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.six {
+  position: relative;
+}
+
+.six svg {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+.six .hat {
+  left: 46vw;
+  position: absolute;
+  /* transform: scale(0.1); */
+  top: -2vh;
+  width: 80px;
+}
+
+.baloons svg {
+  display: inline-block;
+  position: absolute;
+}
+
+.baloons svg:nth-child(even) {
+  left: -10%;
+}
+
+.baloons svg:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons svg:nth-child(3n + 0) {
+  left: 30%;
+}
+
+.eight svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 25px;
+  z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+  fill: #bd6ecf;
+  left: 5vw;
+  top: 7vh;
+}
+
+.eight svg:nth-child(2) {
+  fill: #7dd175;
+  left: 35vw;
+  top: 23vh;
+}
+
+.eight svg:nth-child(3) {
+  fill: #349d8b;
+  left: 23vw;
+  top: 33vh;
+}
+
+.eight svg:nth-child(4) {
+  fill: #347a9d;
+  left: 57vw;
+  top: 43vh;
+}
+
+.eight svg:nth-child(5) {
+  fill: #c66053;
+  left: 7vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(6) {
+  fill: #bfaa40;
+  left: 77vw;
+  top: 42vh;
+}
+
+.eight svg:nth-child(7) {
+  fill: #e3bae8;
+  left: 83vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(8) {
+  fill: #8762cb;
+  left: 37vw;
+  top: 86vh;
+}
+
+.eight svg:nth-child(9) {
+  fill: #9a90da;
+  left: 87vw;
+  top: 94vh;
+}
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wish h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0;
+}
+
+.last-smile {
+  font-weight: bold;
+}
+
+#replay {
+  cursor: pointer;
+  z-index: 3;
+}
+.nine{
+  margin: auto 10vw;
+}
+.nine h1 {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.eleven {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75vh;
+  width: fit-content;
+}
+.tombolReplay {
+  position: relative;
+  bottom: 80vh;
+}
+.tombol {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.tombol:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.tombol:active {
+	position:relative;
+	top:1px;
+}
