@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <div class="opener">
+        <div class="hello" style="opacity: 1;">
+            Halo...
+        </div>
+    </div>
+    <div class="nav">
+        <button id="play">play()</button>
+        <button id="pause">pause()</button>
+        <button id="resume">resume()</button>
+        <button id="reverse">reverse()</button>
+        <button id="restart">restart()</button>
+    </div>
+    <div class="container">        
+        <audio class="song" loop autoplay>
+            <source src="./music/hbd.mp3">
+            </source>
+            Your browser isn't invited for super fun audio time.
+        </audio>
+        <audio class="song_2" preload="auto" loop>
+            <source src="./music/kamu.mp3">
+            </source>
+            Your browser isn't invited for super fun audio time.
+        </audio>
+        <div class="scene scene_1">
+            <div class="animasi_1">
+                <img src="img/hello.gif" alt="" width="200px" height="200px" class="isi_animasi_1">
+            </div>
+            <div class="teks teks_1">
+                <span class="teks_1_1">Halo Mbak Kunti</span><br><span class="teks_1_2">Gimana kabar Mbak Kunti? :D</span>
+            </div>
+        </div>
+        <div class="scene scene_2">
+            <div class="animasi_2">
+                <img src="img/wing.gif" alt="" width="200px" height="200px">
+            </div>
+            <div class="teks teks_1_3">
+                Aku harap, semoga mbak kunti baik-baik saja
+                <span>&nbsp;</span>
+                <span class="senyum_1">:)</span>
+            </div>
+        </div>
+        <div class="scene scene_3">
+            <div class="teks teks_2">
+                <span class="teks_2_1 teks_2_sub_1">Oh ya mbak Kunt!</span>
+                <span class="teks_2_1 teks_2_sub_2">Mbak kunt sadar ga?</span>
+                <span class="teks_2_1 teks_2_sub_3">Sudah lama sekali chat anonim kita terpendam lhoo :"v</span>
+            </div>
+        </div>
+        <div class="scene scene_4">
+            <div class="teks teks_3">Tau Ga Sih?</div>
+            <div class="animasi_3">
+                <img src="img/hope.gif" alt="" width="200px" height="200px">
+            </div>
+            <div class="teks teks_4">
+                Jadi Kangen...
+                <span>&nbsp;</span>
+                <span class="emot_1">:`)</span>
+            </div>
+        </div>
+        <div class="scene scene_5">
+            <div class="animasi_4">
+                <img src="img/canda.gif" alt="" width="200px" height="200px">
+            </div>
+            <div class="teks teks_5">
+                Hehehe... <br>
+                <span class="sub_teks_5">Bercanda Kok... ^_^</span>
+            </div>
+        </div>
+        <div class="scene scene_6">
+            <div class="teks teks_6 teks_6_1">Mbak Kunti...</div>
+            <div class="teks teks_6 teks_6_2">Bolehkah aku mengajukan sebuah permintaan?</div>
+            <div class="animasi_5">
+                <img src="img/bolehya.gif" alt="" width="200px" height="200px">
+            </div>
+            <div class="teks teks_6_3">Boleh Ya? Pliss</div>
+            <div class="teks teks_6_4">Sentuh pocong ini mbak :)</div>
+            <div class="ikon" style="font-size: 40px;">&#128123</div>
+        </div>
+    </div>
+    <div class="container_2">
+        <div class="wrapper_2">
+            <div id='Content'>
+                <div class="foto">
+                  <div class="image">
+                    <img src="https://i.postimg.cc/MHGjJdtf/c178eae8b11823b36f4d76fc5f8a2a29.gif" width="100px" height="100px" />
+                  </div>
+                  <p id="textnama"></p>
+                </div>
+            
+                <div id='pergeseran'>
+                  <p>
+                    <i>Geser dong &#128073;</i>
+                  </p>
+                  <p>
+                    Selamat malam mbak Kunti&#127774;
+                  </p>
+                  <p>
+                    Aku mau bilang sesuatu nih
+                  </p>
+                  <p>
+                    Gimana kabar mbak Kunti? 
+                  </p>
+                  <p>
+                    Aku yakin, apapun yang terjadi
+                  </p>
+                  <p>
+                    Mbak harus selalu jalanin dengan bahagia
+                  </p>
+                  <p>
+                    Pesanku buat mbak...
+                  </p>
+                  <p>
+                    Jangan lupa tersenyum
+                  </p>
+                  <p>
+                    Semangat yaa buat Mbaak :)
+                  </p>
+                  <p>
+                    Permintaanku terakhir...
+                  </p>
+                  <p>
+                    Mbak Kunt...
+                  </p>
+                  <p>
+                    Maukah mbak kunti mutualan sama aku?
+                  </p>
+                  <p>
+                    Boleh ya? :)
+                  </p>
+                  <p>
+                    &#128073; <a id="tm" class="tm_1">[ Boleh deh ]</a><a id="tm" class="tm_2">[ Gak mau wlee ]</a>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>
