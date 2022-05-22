@@ -104,11 +104,11 @@ window.addEventListener('load', () => {
         document.querySelector(".ikon").onclick = () => tl.resume();
         document.querySelector(".tm_1").onclick = () => pmau();
         document.querySelector(".tm_2").onclick = () => pgakmau();
-        document.querySelector("#play").onclick = () => tl.play();
-        document.querySelector("#pause").onclick = () => tl.pause();
-        document.querySelector("#resume").onclick = () => tl.resume();
-        document.querySelector("#reverse").onclick = () => tl.reverse();
-        document.querySelector("#restart").onclick = () => tl.restart();
+//         document.querySelector("#play").onclick = () => tl.play();
+//         document.querySelector("#pause").onclick = () => tl.pause();
+//         document.querySelector("#resume").onclick = () => tl.resume();
+//         document.querySelector("#reverse").onclick = () => tl.reverse();
+//         document.querySelector("#restart").onclick = () => tl.restart();
 
     function showDiv() {
       document.getElementById('Content').style.display = "block";
