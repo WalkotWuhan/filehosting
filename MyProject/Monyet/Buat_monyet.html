@@ -1,0 +1,99 @@
+<html>
+<head>
+  <meta charset='UTF-8' />
+  <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport' />
+  <meta content='IE=edge' http-equiv='X-UA-Compatible' />
+  <title>Monyeeet!!!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" /><script src="script.js"></script>
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: url("https://i.postimg.cc/7Y9X8WVX/IMG-20211201-090448-830.jpg");
+      background-repeat: no-repeat;
+      animation: none;
+      background-size: 100% 100%;
+    }
+  </style>
+
+  <div id='Content'>
+    <div class="foto">
+      <div class="image">
+        <img src="https://i.postimg.cc/MHGjJdtf/c178eae8b11823b36f4d76fc5f8a2a29.gif" width="100px" height="100px" />
+      </div>
+      <p id="textnama"></p>
+    </div>
+
+    <div id='pergeseran'>
+      <p><i>Geser dong &nbsp;</i>&#128586;&#128073;</p>
+
+      <p>Met Malam Kamis Monyet Manis &#128586;</p>
+      
+      <p>Jangan tidur malem-malem ya</p>
+      
+      <p>Selamat melepas lelah</p>
+      
+      <p>Moga mimpi indah ya &#129392;</p>
+      
+      <p>Baca doa dulu sebelum boboo <3</p>
+      
+      <p>Okeeyyy? &#9829;</p>
+      
+      <p>Jangan klik ini ya &#129315;&#128073; <a id="tm" onClick='pmau();'>[ Duarr ]</a></p>
+    </div>
+  </div>
+
+  <script>
+    //Audio Link MP3
+    function play() {
+      var audio = new Audio('https://lv3000.likeadream.repl.co/musik.mp3');
+      audio.play();
+      audio.loop = true;
+      audio.addEventListener('ended', function() {
+        this.currentTime = 0; this.play();
+      }, false);
+    }
+    //Pembuka
+    var a = 0, textnm; textnm =
+    "Hai Monyeet ><"
+
+    const swals = Swal.mixin({
+      cancelButtonColor: '#909090', confirmButtonColor: '#00B487', allowOutsideClick: false,
+    });
+
+    async function pmau() {
+      await swals.fire({
+
+title: 'Good Night!',
+
+text: 'Dibilang jangan di-klik >:(',
+
+imageUrl: 'https://i.postimg.cc/FFb0tKqb/5N2g.gif',
+
+imageWidth: 400,
+
+imageHeight: 200,
+
+});
+
+await swals.fire('Maaf yaa &#129315;');
+
+await swals.fire('Baibaiii &#128571;');
+
+}
+
+    async function pgakmau() {
+      await swals.fire('Yeh :v');
+    }
+
+    async function start() {
+      await swals.fire('Halo ツ'); setTimeout(mulai, 900); play();
+    }
+    start();
+  </script>
+
+</body>
+</html>
