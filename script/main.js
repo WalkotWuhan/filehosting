@@ -61,3 +61,44 @@ const WebpageProject = () => {
 
 //var objs = document.getElementsByClassName("container");
 //objs.addEventListener("click", KonfirmasiMusik)
+
+// fetchData
+
+async function fetchData(type = "skills") {
+  let response
+  type === "skills" ?
+      response = await fetch("skills.json")
+      :
+      response = await fetch("./json/projects.json")
+  const data = await response.json();
+  return data;
+}
+
+
+function showProjects(projects) {
+  let projectsContainer = document.querySelector("#work .box-container");
+  let projectHTML = "";
+  projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
+      projectHTML += `
+      <div class="box tilt">
+    <img draggable="false" src="${project.image}" alt="project" />
+    <div class="content">
+      <div class="tag">
+      <h3>${project.name}</h3>
+      </div>
+      <div class="desc">
+        <p>${project.desc}</p>
+        <div class="btns">
+          <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+          <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>`
+  });
+  projectsContainer.innerHTML = projectHTML;
+}
+
+fetchData("projects").then(data => {
+  showProjects(data);
+});
