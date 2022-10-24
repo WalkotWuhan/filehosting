@@ -30,15 +30,5 @@
             "code": "#"
         }
     }
-    ,
-    {
-        "id": 1,
-        "name": "Portfolio Website",
-        "desc": "Website yang berisi Portofolio saya. Website ini saya buat sendiri dengan menggunakan bantuan beberapa javascript untuk mempercantik tampilan.",
-        "image": "../img/projects/portofolio.png",
-        "links": {
-            "view": "#",
-            "code": "#"
-        }
-    }
+    
 ]
